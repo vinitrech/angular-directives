@@ -53,6 +53,9 @@
       <p appBasicHighlight>Style me with basic directive</p>
       <p appBetterHighlight [defaultColor]="'yellow'" [highlightColor]="'red'">Style me with better directive</p>
 
+<!--      The appBetterHighlight could be used as [appBetterHighlight] too, by creating an alias to some property and then passing the value-->
+<!--      directly to the [appBetterHighlight], it would recognize that this is a directive, and has a property to bind the value as an alias -->
+
       <div [ngSwitch]="value">
         <p *ngSwitchCase="5">Value is 5</p>
         <p *ngSwitchCase="10">Value is 10</p>
